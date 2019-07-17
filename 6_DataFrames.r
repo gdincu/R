@@ -14,6 +14,7 @@ d[3,]		- Returns the third Row as a dataframe
 d[,5] 	- Fifth Column
 d <- d[c(8,9)]	- Returns a data frame build from the columns 8 and 9
 ###To retain the dimensions of the initial data frame use drop=FALSE
+###drop=FALSE forces R to return a data frame
 eg. d[2,,drop=FALSE]
 
 #Rename columns
