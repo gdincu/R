@@ -9,7 +9,7 @@ d$Grade.Name[is.na(d$Grade.Name)] <- NA
 d <- d[!(d$Grade.Name == "Exec"),]
 
 #Selecting rows or columns
-d[[5]]	- Returns one column—specifically, the nth column of dfrm
+d[[5]]	- Returns one columnâ€”specifically, the nth column of dfrm
 d[3,]		- Returns the third Row as a dataframe
 d[,5] 	- Fifth Column
 d <- d[c(8,9)]	- Returns a data frame build from the columns 8 and 9
@@ -24,6 +24,7 @@ colnames(d) and names(d) used to get column names
 
 #Remove columns
 d[[3]] <- NULL
+d[names(d) == 'Level5'] <- NULL
 
 #Export data frame to CSV file
 write.csv(d, file.choose(), row.names = FALSE)
