@@ -18,6 +18,9 @@ eg. d[2,,drop=FALSE]
 
 #Rename columns
 colnames(d)[1] <- "Test"
+names(d)[names(d) == 'Cluster'] <- 'Test Cluster'
+
+colnames(d) and names(d) used to get column names
 
 #Remove columns
 d[[3]] <- NULL
